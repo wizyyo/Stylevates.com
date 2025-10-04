@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Collections – STYLEVATES WEAR</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: VogueAvantGarde, helvetica, sans-serif, AdobeGaramondPro, serif;
+            font-weight: 400;
+            font-size: 15px;
+
+        }
+
+        .Footer {
+            background: #000;
+            color: #fff;
+            padding: 32px 0 16px 0;
+            text-align: center;
+        }
+
+        .Footer nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #fff;
+        }
+
+        .HeaderNav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+            background-color: #fff;
+        }
+
+        .HeaderNav nav a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        .HeaderIcons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .CartIcon,
+        .UserIcon {
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .CartIcon svg,
+        .UserIcon svg {
+            width: 28px;
+            height: 28px;
+            fill: #222;
+        }
+
+        .Button--primary {
+            background: #000 !important;
+            color: #fff !important;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .Button--primary:hover {
+            background: #222 !important;
+        }
+
+        .navbar-collapse.show {
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="HeaderNav">
+            <nav style="width: 100%; background-color: #fff;" class="navbar navbar-expand-lg bg-body-tertiary">
+                <div style="background-color: #fff; height: inherit;" class="container-fluid">
+                    <a href="/"><img src="images/stylevates.jpg" alt="STYLEVATES WEAR" width="145"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SHOP ALL</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    WHAT'S NEW
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">DRESSES</a></li>
+                                    <li><a class="dropdown-item" href="#">TROUSERS</a></li>
+                                    <li><a class="dropdown-item" href="#">ESSENTIALS</a></li>
+                                    <li><a class="dropdown-item" href="#">JUMPSUITS</a></li>
+                                    <li><a class="dropdown-item" href="#">TOPS</a></li>
+                                    <li><a class="dropdown-item" href="#">SETS</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <h1 style="font-weight: 900; font-size: 25px;">Collections</h1>
+        <div class="Grid">
+            <div class="CollectionCard">
+                <a href="/collections/3am">
+                    <img src="images/1_0005_0K9A8152-Editcopy.png" alt="LEXA JUMPSUIT" width="300">
+                    <button class="Button Button--primary">3:AM</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/55-off-sets-1">
+                    <img src="images/IMG_0027_copy_1.jpg" alt="EDEN SET" width="300">
+                    <button class="Button Button--primary">55% OFF SETS</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/55-off-sets">
+                    <img src="images/IMG-7939_1.jpg" alt="STRATO JOGGERS- GREY" width="300">
+                    <button class="Button Button--primary">65% OFF</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/sets">
+                    <img src="images/IMG_0027_copy_6.jpg" alt="EDEN SET BLACK" width="300">
+                    <button class="Button Button--primary">SETS</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/dresses">
+                    <img src="images/IMG-7939_5.jpg" alt="LEXA DRESS" width="300">
+                    <button class="Button Button--primary">DRESSES</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/trousers">
+                    <img src="images/1_0005_0K9A8152-Editcopy.png" alt="TROUSERS BLACK" width="300">
+                    <button class="Button Button--primary">TROUSERS</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/tops">
+                    <img src="images/B18A9198-Edit_5c050af0-a9fd-4627-a086-92de6f804403_6.jpg" alt="TOP WHITE"
+                        width="300">
+                    <button class="Button Button--primary">TOPS</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/jumpsuits">
+                    <img src="images/B18A5271-website_5.jpg" alt="JUMPSUIT GREY" width="300">
+                    <button class="Button Button--primary">JUMPSUITS</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/loungewear">
+                    <img src="images/1_0005_0K9A8152-Editcopy.png" alt="LOUNGEWEAR SET" width="300">
+                    <button class="Button Button--primary">ESSENTIALS</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/collections">
+                    <img src="images/1_0005_0K9A8152-Editcopy.png" alt="COLLECTIONS BANNER" width="300">
+                    <button class="Button Button--primary">COLLECTIONS</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/best-sellers">
+                    <img src="images/0K9A6780-Edit_2.jpg" alt="BEST SELLERS" width="300">
+                    <button class="Button Button--primary">MOST WANTED</button>
+                </a>
+            </div>
+            <div class="CollectionCard">
+                <a href="/collections/sale">
+                    <img src="images/1_0005_0K9A8152-Editcopy.png" alt="SALE BANNER" width="300">
+                    <button class="Button Button--primary">SALE</button>
+                </a>
+            </div>
+
+
+        </div>
+    </main><br>
+    <footer class="Footer">
+        <img src="images/stylevate black.jpg" alt="WEAR" width="85">
+        <nav>
+            <a href="/pages/contact-us">CONTACT US</a>
+            <a href="/pages/sizing-chart">SIZING CHART</a>
+            <a href="/pages/delivery">SHIPPING & CARE</a>
+            <a href="/pages/refunds-exchange-policy-1">REFUNDS & EXCHANGE POLICY</a>
+            <a href="/pages/faqs">FAQs</a>
+            <a href="/pages/press-opportunities">PRESS & OPPORTUNITIES</a>
+            <a href="/policies/privacy-policy">PRIVACY POLICY</a>
+        </nav><br>
+        <p>© STYLEVATES WEAR</p>
+    </footer>
+</body>
+
+</html>

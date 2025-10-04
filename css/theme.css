@@ -1,0 +1,154 @@
+:root {
+  --main-bg: #fff;
+  --main-text: #222;
+  --main-border: #eee;
+  --button-bg: #000;
+  --button-text: #fff;
+  --footer-bg: #000;
+  --footer-text: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--main-bg);
+  color: var(--main-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Futura, Arial, sans-serif;
+  margin: 0 0 .3rem 0;
+}
+
+a {
+  color: var(--main-text);
+  text-decoration: none;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.CollectionCard {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.CollectionCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Button--primary {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background .2s;
+}
+
+.Button--primary:hover {
+  background: #222;
+}
+
+.HeaderNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.HeaderNav nav a {
+  margin: 0 8px;
+  color: var(--main-text);
+  font-weight: 500;
+}
+
+.HeaderIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.CartIcon, .UserIcon {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.CartIcon svg, .UserIcon svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--main-text);
+}
+
+.Footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 35px 0 16px 0;
+  text-align: center;
+}
+
+.Footer nav a {
+  color: var(--footer-text);
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .Grid {
+    gap: 16px;
+  }
+  .CollectionCard {
+    width: 45%;
+    min-width: 220px;
+  }
+  .HeaderNav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0;
+  }
+  .HeaderIcons {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .CollectionCard {
+    width: 100%;
+    min-width: unset;
+    padding: 12px;
+  }
+  .HeaderNav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 0;
+  }
+  .HeaderNav nav {
+    margin-top: 8px;
+  }
+  .Footer {
+    padding: 20px 0 10px 0;
+    font-size: 0.95rem;
+  }
+  .Footer nav a {
+    margin: 0 6px;
+  }
+}
